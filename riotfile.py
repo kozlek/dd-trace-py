@@ -2294,6 +2294,10 @@ venv = Venv(
             pkgs={
                 "pytest-asyncio": "==0.21.1",
                 "pytest-randomly": latest,
+                # httpx2 (https://github.com/pydantic/httpx2) is an API-compatible continuation of
+                # httpx and is instrumented by the same integration. It is an independent package
+                # (built on httpcore2) so it installs alongside httpx without conflict.
+                "httpx2": latest,
                 "httpx": [
                     "~=0.25.0",
                     "~=0.27.0",

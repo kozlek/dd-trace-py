@@ -165,6 +165,11 @@ _MODULES_FOR_CONTRIB = {
     "azure_functions": ("azure.functions",),
     "azure_servicebus": ("azure.servicebus",),
     "httplib": ("http.client",),
+    "httpx": (
+        "httpx",
+        # httpx2 (https://github.com/pydantic/httpx2) is an API-compatible continuation of httpx
+        "httpx2",
+    ),
     "kafka": ("confluent_kafka",),
     "google_adk": ("google.adk",),
     "google_cloud_pubsub": ("google.cloud.pubsub_v1",),

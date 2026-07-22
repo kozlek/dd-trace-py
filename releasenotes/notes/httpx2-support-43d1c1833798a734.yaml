@@ -1,0 +1,6 @@
+---
+features:
+  - |
+    httpx: Adds tracing support for `httpx2 <https://github.com/pydantic/httpx2>`_, an
+    API-compatible continuation of ``httpx``. Requests made with ``httpx2`` are now traced by the
+    ``httpx`` integration and honor the same ``DD_HTTPX_*`` configuration. Supported versions ``>=2``.

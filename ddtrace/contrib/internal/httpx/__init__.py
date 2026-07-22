@@ -1,6 +1,7 @@
 """
 The httpx__ integration traces all HTTP requests made with the ``httpx``
-library.
+library. It also instruments httpx2__, an API-compatible continuation of ``httpx``;
+both packages are traced by this integration and share the ``httpx`` configuration below.
 
 Enabling
 ~~~~~~~~
@@ -13,7 +14,7 @@ Alternatively, use :func:`patch()<ddtrace.patch>` to manually enable the integra
     from ddtrace import patch
     patch(httpx=True)
 
-    # use httpx like usual
+    # use httpx (or httpx2) like usual
 
 
 Configuration
@@ -54,4 +55,5 @@ Configuration
 :ref:`HTTP Tagging <http-tagging>` is supported for this integration.
 
 .. __: https://www.python-httpx.org/
+.. __: https://github.com/pydantic/httpx2
 """
